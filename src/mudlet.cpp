@@ -1023,7 +1023,7 @@ bool mudlet::setLabelClickCallback( Host * pHost, QString & name, QString & func
 int mudlet::getLastLineNumber( Host * pHost, QString & name )
 {
     QMap<QString, TConsole *> & dockWindowConsoleMap = mHostConsoleMap[pHost];
-    if( dockWindowMap.contains( name ) )
+    if( dockWindowConsoleMap.contains( name ) )
     {
         return dockWindowConsoleMap[name]->getLastLineNumber();
     }
